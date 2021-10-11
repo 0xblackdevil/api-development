@@ -17,6 +17,6 @@ mongo
 app.use('/api/auth',authRout);
 
 //server listen
-app.listen(process.env.port, () => {
+app.listen(process.env.port || 9898, () => {
     console.log("Server running");
 });
