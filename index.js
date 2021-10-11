@@ -9,7 +9,7 @@ app.use(express.json());
 
 //mongo database connection...
 mongo
-.connect(process.env.mongoURL)
+.connect("mongodb+srv://blackdevil98:soNi1807*@apitest.kshe3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 .then(() => console.log("Database connected"))
 .catch((err) => console.error(err));
 
